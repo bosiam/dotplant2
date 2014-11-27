@@ -33,7 +33,6 @@ if ($memcached_exists === true) {
 } else {
     echo "WARNING: We suggest you to use memcached for caching.\n";
     if (SILENT_MODE) {
-        continue;
     }
     echo "Continue using filecache instead? [y/N] ";
     while (true) {
